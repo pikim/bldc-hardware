@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:BLDC_4-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,18 +28,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:crf_1
 LIBS:BLDC_4-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
-Title "BLDC Driver 4.11"
-Date "21 aug 2015"
-Rev "4.11"
+Title "BLDC Driver 4.11p"
+Date "2016-01-06"
+Rev "A"
 Comp "Benjamin Vedder"
-Comment1 ""
+Comment1 "modified by pikim"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -188,17 +186,6 @@ F 3 "" H 5100 4450 60  0001 C CNN
 	1    5100 4450
 	1    0    0    -1  
 $EndComp
-$Comp
-L VCC #PWR032
-U 1 1 53FBB5DA
-P 4900 2850
-F 0 "#PWR032" H 4900 2950 30  0001 C CNN
-F 1 "VCC" V 4850 2900 30  0000 C CNN
-F 2 "" H 4900 2850 60  0001 C CNN
-F 3 "" H 4900 2850 60  0001 C CNN
-	1    4900 2850
-	1    0    0    -1  
-$EndComp
 Connection ~ 5950 3550
 Connection ~ 6200 3650
 Connection ~ 6450 3750
@@ -238,10 +225,10 @@ Wire Wire Line
 Wire Wire Line
 	5100 3850 5100 4050
 $Comp
-L GND-RESCUE-BLDC_4 #PWR033
+L GND-RESCUE-BLDC_4 #PWR032
 U 1 1 53FBB5F9
 P 6200 4450
-F 0 "#PWR033" H 6200 4450 30  0001 C CNN
+F 0 "#PWR032" H 6200 4450 30  0001 C CNN
 F 1 "GND" H 6200 4380 30  0001 C CNN
 F 2 "" H 6200 4450 60  0001 C CNN
 F 3 "" H 6200 4450 60  0001 C CNN
@@ -249,10 +236,10 @@ F 3 "" H 6200 4450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-BLDC_4 #PWR034
+L GND-RESCUE-BLDC_4 #PWR033
 U 1 1 53FBB5FF
 P 6450 4450
-F 0 "#PWR034" H 6450 4450 30  0001 C CNN
+F 0 "#PWR033" H 6450 4450 30  0001 C CNN
 F 1 "GND" H 6450 4380 30  0001 C CNN
 F 2 "" H 6450 4450 60  0001 C CNN
 F 3 "" H 6450 4450 60  0001 C CNN
@@ -265,7 +252,7 @@ Wire Wire Line
 	4900 3450 4900 3850
 Connection ~ 4900 3850
 Wire Wire Line
-	4900 2850 4900 2950
+	4900 2800 4900 2950
 Wire Wire Line
 	4900 2850 5200 2850
 Connection ~ 5000 2850
@@ -289,4 +276,16 @@ Text HLabel 6600 3750 2    60   Output ~ 0
 HALL1_OUT
 Text HLabel 6600 3850 2    60   Output ~ 0
 TEMP_OUT
+Connection ~ 4900 2850
+$Comp
+L VCC #PWR034
+U 1 1 53FBB5DA
+P 4900 2800
+F 0 "#PWR034" H 4900 2900 30  0001 C CNN
+F 1 "VCC" V 4850 2850 30  0000 C CNN
+F 2 "" H 4900 2800 60  0001 C CNN
+F 3 "" H 4900 2800 60  0001 C CNN
+	1    4900 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:BLDC_4-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,18 +28,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:crf_1
 LIBS:BLDC_4-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title "BLDC Driver 4.11"
-Date "21 aug 2015"
-Rev "4.11"
+Title "BLDC Driver 4.11p"
+Date "2016-01-06"
+Rev "A"
 Comp "Benjamin Vedder"
-Comment1 ""
+Comment1 "modified by pikim"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -75,6 +73,7 @@ F 0 "C41" H 4150 4200 40  0000 L CNN
 F 1 "2.2u" H 4156 4015 40  0000 L CNN
 F 2 "CRF1:SMD-0603_c" H 4188 3950 30  0001 C CNN
 F 3 "" H 4150 4100 60  0000 C CNN
+F 4 "GRM188R61C225KAAD or GRM188C81A225KAAD" H 4150 4100 60  0001 C CNN "Part#"
 	1    4150 4100
 	1    0    0    -1  
 $EndComp
